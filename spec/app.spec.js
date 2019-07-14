@@ -21,6 +21,15 @@ describe("/api", () => {
           expect(shoes.length).to.equal(15);
         });
     });
+    it("shoes can be filtered by size", () => {
+      return request
+        .get("/api/shoes?size=4")
+        .expect(200)
+        .then(({ body: { shoes } }) => {
+          expect(shoes).to.be.a("array");
+          expect(shoes.length).to.equal(3);
+        });
+    });
   });
   describe("/shoes/:shoe_id", () => {
     it("GET responds with status: 200 and relevant shoes", () => {

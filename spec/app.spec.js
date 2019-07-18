@@ -17,7 +17,6 @@ describe("/api", () => {
         .get("/api/shoes")
         .expect(200)
         .then(({ body: { shoes } }) => {
-          console.log(shoes)
           expect(shoes).to.be.a("array");
           expect(shoes.length).to.equal(9);
         });

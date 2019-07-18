@@ -25,7 +25,16 @@ Clone this repo;
 git clone https://github.com/clo2202/golden-shoe
 ```
 
-## Step 3 - Getting started with your project
+## Step 3 - Set up the DB locally
+
+Run the command;
+
+```bash
+npm run setup-db
+# This will set-up the db on your local machine.
+```
+
+## Step 4 - Getting started with your project
 
 Once you're in the repo, ensure you have downloaded all of the dependencies using the following command;
 

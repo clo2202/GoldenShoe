@@ -1,5 +1,4 @@
 exports.up = function(knex) {
-  // console.log("creating shoes table");
   return knex.schema.createTable("shoes", shoesTable => {
     shoesTable.increments("shoe_id").primary();
     shoesTable.string("shoe_name");
@@ -11,6 +10,5 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  // console.log("dropping shoes table");
   return knex.schema.dropTable("shoes");
 };

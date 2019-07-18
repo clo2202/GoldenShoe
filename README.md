@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 In order to use this project you'll need the following;
 
-1. A JS code editor (I used VS code)
+1. A text editor (I used VS code)
 2. [PostgreSQL](https://www.postgresql.org/) db set up. 
 3. [Insomnia](https://insomnia.rest/) view API responses and create requests (optional). 
 4. A heroku account to view your requests (optional).
